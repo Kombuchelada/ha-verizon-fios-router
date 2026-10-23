@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Verizon Fios Router integration for Home Assistant (CHR30A, CR1000A) — HACS</title>
-<meta name="description" content="Home Assistant custom integration for the Verizon Fios router (CHR30A; CR1000A/CR1000B unverified). WAN status, public IP, port speeds and errors, throughput, data usage, connected devices, guest Wi-Fi, UPnP, device block and reboot. Local polling, installable with HACS.">
+<title>Verizon Fios Router CHR30A integration for Home Assistant — HACS</title>
+<meta name="description" content="Home Assistant custom integration for the Verizon Fios router CHR30A. WAN status, public IP, port speeds and errors, throughput, data usage, connected devices, guest Wi-Fi, UPnP, device block and reboot. Local polling, installable with HACS.">
 <link rel="canonical" href="https://kombuchelada.github.io/ha-verizon-fios-router/">
 <meta property="og:title" content="Verizon Fios Router for Home Assistant">
 <meta property="og:description" content="Monitor and control a Verizon Fios router (CHR30A) from Home Assistant. Local, no cloud, HACS-installable.">
@@ -19,7 +19,7 @@
   "codeRepository": "https://github.com/Kombuchelada/ha-verizon-fios-router",
   "programmingLanguage": "Python",
   "license": "https://opensource.org/licenses/MIT",
-  "keywords": "Home Assistant, Verizon Fios, Fios router, CHR30A, CR1000A, CR1000B, HACS, router integration"
+  "keywords": "Home Assistant, Verizon Fios, Fios router, CHR30A, HACS, router integration"
 }
 </script>
 <style>
@@ -37,7 +37,7 @@
 </head>
 <body>
 <h1>Verizon Fios Router for Home Assistant</h1>
-<p class="sub">A HACS custom integration for the Verizon Fios CHR30A router. CR1000A / CR1000B may work, unverified.</p>
+<p class="sub">A HACS custom integration for the Verizon Fios CHR30A router. For the CR1000A, see <a href="https://github.com/skircr115/ha-verizonFiOS">skircr115/ha-verizonFiOS</a>.</p>
 
 <p>Verizon's Fios routers have no SNMP, SSH or public API. This integration reads the router through the same local JSON API its admin web page uses, and brings it into Home Assistant:</p>
 <ul>

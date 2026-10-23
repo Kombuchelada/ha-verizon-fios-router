@@ -1,6 +1,6 @@
 # Verizon Fios Router for Home Assistant (CHR30A)
 
-A Home Assistant custom integration for the **Verizon Fios** router, installable through **HACS**. It reads WAN status, public IP, per-port link speed and error counters, WAN throughput and data usage, connected devices and firmware from the router's local web API, and gives you guest Wi-Fi, UPnP, per-device internet block and reboot controls. Tested on the **Verizon Wi-Fi Access Point CHR30A**; the **CR1000A / CR1000B** "Verizon Router" may work (see [Supported hardware](#supported-hardware)). Local polling, no cloud, no Verizon account.
+A Home Assistant custom integration for the **Verizon Fios** router, installable through **HACS**. It reads WAN status, public IP, per-port link speed and error counters, WAN throughput and data usage, connected devices and firmware from the router's local web API, and gives you guest Wi-Fi, UPnP, per-device internet block and reboot controls. Tested on the **Verizon Wi-Fi Access Point CHR30A**; the CR1000A / CR1000B use a different API and are not supported (see [Supported hardware](#supported-hardware)). Local polling, no cloud, no Verizon account.
 
 [![Validate](https://github.com/Kombuchelada/ha-verizon-fios-router/actions/workflows/validate.yml/badge.svg)](https://github.com/Kombuchelada/ha-verizon-fios-router/actions/workflows/validate.yml)
 [![Tests](https://github.com/Kombuchelada/ha-verizon-fios-router/actions/workflows/tests.yml/badge.svg)](https://github.com/Kombuchelada/ha-verizon-fios-router/actions/workflows/tests.yml)
@@ -30,10 +30,10 @@ There's no speed test and no "update available" sensor: the router's speed test 
 | Model | Status |
 |---|---|
 | Verizon Wi-Fi Access Point **CHR30A** (as the main router), firmware 4.1.7.8822 | **Tested**, used daily |
-| Verizon Router **CR1000A**, **CR1000B** | **Unverified.** Same web UI family, so the API may match. The port entities assume the CHR30A's ports (WAN, 10G LAN, 2.5G LAN1, 2.5G LAN2) and will be wrong on other layouts |
+| Verizon Router **CR1000A**, **CR1000B** | **Not supported.** These use a different, `.cgi`-based admin API. For the CR1000A, use [skircr115/ha-verizonFiOS](https://github.com/skircr115/ha-verizonFiOS) |
 | Fios Router G3100, G1100 and older | Unknown |
 
-If you try another model, please [report it](#reporting-a-new-router-model), whether it works or not.
+To check whether a router speaks the API this integration needs, open `https://<router-ip>/CRSP/open/getLoginToken` in a browser. A `405 Method Not Allowed` means it does; a `404` means it doesn't. Other models that pass that check may work, but the port entities assume the CHR30A's ports (WAN, 10G LAN, 2.5G LAN1, 2.5G LAN2). If you try one, please [report it](#reporting-a-new-router-model), whether it works or not.
 
 Verizon pushes firmware without asking, and the API is undocumented, so any update can break something. If entities go unavailable right after the **Firmware** sensor changes, that's the likely cause; please open an issue with diagnostics.
 

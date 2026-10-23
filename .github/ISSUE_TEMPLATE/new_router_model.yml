@@ -13,7 +13,7 @@ body:
     attributes:
       label: Router model, hardware and firmware version
       description: From the router's web UI (System Info / About), or the integration's device page if setup worked.
-      placeholder: CR1000A, hardware 1.0, firmware 3.x.x.x
+      placeholder: G3100, hardware 1.0, firmware 3.x.x.x
     validations:
       required: true
   - type: dropdown
