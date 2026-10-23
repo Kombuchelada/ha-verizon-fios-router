@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Verizon Fios Router integration for Home Assistant (CHR30A, CR1000A) — HACS</title>
+<meta name="description" content="Home Assistant custom integration for the Verizon Fios router (CHR30A; CR1000A/CR1000B unverified). WAN status, public IP, port speeds and errors, throughput, data usage, connected devices, guest Wi-Fi, UPnP, device block and reboot. Local polling, installable with HACS.">
+<link rel="canonical" href="https://kombuchelada.github.io/ha-verizon-fios-router/">
+<meta property="og:title" content="Verizon Fios Router for Home Assistant">
+<meta property="og:description" content="Monitor and control a Verizon Fios router (CHR30A) from Home Assistant. Local, no cloud, HACS-installable.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kombuchelada.github.io/ha-verizon-fios-router/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareSourceCode",
+  "name": "Verizon Fios Router for Home Assistant",
+  "description": "Home Assistant custom integration for Verizon Fios routers (CHR30A tested), installable with HACS.",
+  "codeRepository": "https://github.com/Kombuchelada/ha-verizon-fios-router",
+  "programmingLanguage": "Python",
+  "license": "https://opensource.org/licenses/MIT",
+  "keywords": "Home Assistant, Verizon Fios, Fios router, CHR30A, CR1000A, CR1000B, HACS, router integration"
+}
+</script>
+<style>
+  body { font: 17px/1.55 system-ui, sans-serif; max-width: 46rem; margin: 3rem auto; padding: 0 1.25rem; color: #1d1d1f; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin-bottom: .3rem; }
+  .sub { color: #555; margin-top: 0; }
+  a { color: #0b62c4; }
+  code { background: #f2f2f4; padding: .1em .35em; border-radius: 4px; }
+  .cta { display: inline-block; margin: 1rem 0; padding: .6rem 1.1rem; background: #1d1d1f; color: #fff; border-radius: 8px; text-decoration: none; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #111; color: #eee; } .sub { color: #aaa; } a { color: #6ab0ff; }
+    code { background: #222; } .cta { background: #eee; color: #111; }
+  }
+</style>
+</head>
+<body>
+<h1>Verizon Fios Router for Home Assistant</h1>
+<p class="sub">A HACS custom integration for the Verizon Fios CHR30A router. CR1000A / CR1000B may work, unverified.</p>
+
+<p>Verizon's Fios routers have no SNMP, SSH or public API. This integration reads the router through the same local JSON API its admin web page uses, and brings it into Home Assistant:</p>
+<ul>
+  <li>WAN up/down, public IPv4 and IPv6</li>
+  <li>Per-port link, negotiated speed, error and discard counters</li>
+  <li>WAN download/upload throughput and hourly/daily data usage</li>
+  <li>Active devices, a <code>new_device</code> event when an unknown MAC joins, and per-device trackers</li>
+  <li>Switches for guest Wi-Fi, UPnP and per-device internet block; a reboot button</li>
+  <li>Last boot, firmware version and firmware-upgrade-in-progress</li>
+</ul>
+<p>Local polling only: no cloud and no Verizon account. It never calls the router's factory-reset, firmware or backup endpoints.</p>
+
+<p><a class="cta" href="https://github.com/Kombuchelada/ha-verizon-fios-router">Install and documentation on GitHub</a></p>
+
+<p>Install with HACS: add <code>https://github.com/Kombuchelada/ha-verizon-fios-router</code> as a custom repository (type Integration), download <b>Verizon Fios Router</b>, restart, then add it under Settings → Devices &amp; services. Requires Home Assistant 2026.8 or newer.</p>
+
+<p>Protocol notes for the router's <code>/CRSP</code> API: <a href="API.html">API reference</a>.</p>
+
+<p><small>An independent project, not affiliated with or endorsed by Verizon. &ldquo;Verizon&rdquo; and &ldquo;Fios&rdquo; are trademarks of their owner, used only to describe compatibility. MIT licensed.</small></p>
+</body>
+</html>

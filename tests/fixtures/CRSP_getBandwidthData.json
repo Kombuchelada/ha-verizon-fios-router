@@ -1,0 +1,160 @@
+{
+ "lan": [
+  {
+   "deviceName": "device-1",
+   "deviceType": "",
+   "downloadData": {
+    "halfADay": 1665669,
+    "oneDay": 2157473,
+    "oneHour": 590923,
+    "oneMonth": 4075413,
+    "oneWeek": 4075413
+   },
+   "ipv4Address": "192.168.1.101",
+   "totalUsage": 79419231,
+   "uploadData": {
+    "halfADay": 16014175,
+    "oneDay": 36947128,
+    "oneHour": 2803402,
+    "oneMonth": 75343818,
+    "oneWeek": 75343818
+   }
+  },
+  {
+   "deviceName": "device-2",
+   "deviceType": "",
+   "downloadData": {
+    "halfADay": 18446744070224440646,
+    "oneDay": 18446744073347976608,
+    "oneHour": 18446744071292875393,
+    "oneMonth": 3048393579,
+    "oneWeek": 3048393579
+   },
+   "ipv4Address": "192.168.1.102",
+   "totalUsage": 3752646673,
+   "uploadData": {
+    "halfADay": 18446744073628895421,
+    "oneDay": 609771395,
+    "oneHour": 18446744073574254010,
+    "oneMonth": 704253094,
+    "oneWeek": 704253094
+   }
+  },
+  {
+   "deviceName": "device-3",
+   "deviceType": "",
+   "downloadData": {
+    "halfADay": 980089624,
+    "oneDay": 980089624,
+    "oneHour": 4957862,
+    "oneMonth": 980089624,
+    "oneWeek": 980089624
+   },
+   "ipv4Address": "192.168.1.103",
+   "totalUsage": 984485537,
+   "uploadData": {
+    "halfADay": 4395913,
+    "oneDay": 4395913,
+    "oneHour": 1071177,
+    "oneMonth": 4395913,
+    "oneWeek": 4395913
+   }
+  },
+  {
+   "deviceName": "device-4",
+   "deviceType": "",
+   "downloadData": {
+    "halfADay": 18446744070897755429,
+    "oneDay": 167305231423,
+    "oneHour": 1645906865,
+    "oneMonth": 218457387591,
+    "oneWeek": 218457387591
+   },
+   "ipv4Address": "192.168.1.105",
+   "totalUsage": 975858143387,
+   "uploadData": {
+    "halfADay": 302148204789,
+    "oneDay": 469708344047,
+    "oneHour": 45069795461,
+    "oneMonth": 757400755796,
+    "oneWeek": 757400755796
+   }
+  },
+  {
+   "deviceName": "device-5",
+   "deviceType": "",
+   "downloadData": {
+    "halfADay": 18446743985698945706,
+    "oneDay": 18446744038795819536,
+    "oneHour": 196582131,
+    "oneMonth": 2600370691,
+    "oneWeek": 2600370691
+   },
+   "ipv4Address": "192.168.1.106",
+   "totalUsage": 3048196454,
+   "uploadData": {
+    "halfADay": 18446744072535477852,
+    "oneDay": 18446744073396484215,
+    "oneHour": 24614822,
+    "oneMonth": 447825763,
+    "oneWeek": 447825763
+   }
+  },
+  {
+   "deviceName": "device-6",
+   "deviceType": "",
+   "downloadData": {
+    "halfADay": 2005141,
+    "oneDay": 2005141,
+    "oneHour": 2005141,
+    "oneMonth": 2005141,
+    "oneWeek": 2005141
+   },
+   "ipv4Address": "192.168.1.108",
+   "totalUsage": 2331579,
+   "uploadData": {
+    "halfADay": 326438,
+    "oneDay": 326438,
+    "oneHour": 326438,
+    "oneMonth": 326438,
+    "oneWeek": 326438
+   }
+  },
+  {
+   "deviceName": "device-7",
+   "deviceType": "",
+   "downloadData": {
+    "halfADay": 28687281862,
+    "oneDay": 28694782163,
+    "oneHour": 1296715,
+    "oneMonth": 31173962453,
+    "oneWeek": 31173962453
+   },
+   "ipv4Address": "192.168.1.110",
+   "totalUsage": 32064698367,
+   "uploadData": {
+    "halfADay": 95449946,
+    "oneDay": 109846175,
+    "oneHour": 1638719,
+    "oneMonth": 890735914,
+    "oneWeek": 890735914
+   }
+  }
+ ],
+ "wan": {
+  "downloadData": {
+   "halfADay": 74794367905,
+   "oneDay": 299422583531,
+   "oneHour": 2082375547,
+   "oneMonth": 412739347126,
+   "oneWeek": 412739347126
+  },
+  "uploadData": {
+   "halfADay": 282622419710,
+   "oneDay": 452006187436,
+   "oneHour": 45152498654,
+   "oneMonth": 742011593584,
+   "oneWeek": 742011593584
+  }
+ }
+}

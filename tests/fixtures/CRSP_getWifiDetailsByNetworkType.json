@@ -1,0 +1,58 @@
+{
+ "forbiddenMacAddresses": [
+  "02:00:00:00:00:16",
+  "02:00:00:00:00:17",
+  "02:00:00:00:00:18",
+  "02:00:00:00:00:19",
+  "02:00:00:00:00:1A",
+  "02:00:00:00:00:1B",
+  "02:00:00:00:00:1C",
+  "02:00:00:00:00:1D",
+  "02:00:00:00:00:02",
+  "02:00:00:00:00:1E",
+  "02:00:00:00:00:1F",
+  "02:00:00:00:00:14",
+  "02:00:00:00:00:15",
+  "02:00:00:00:00:20",
+  "02:00:00:00:00:21",
+  "02:00:00:00:00:13",
+  "02:00:00:00:00:22"
+ ],
+ "isWifi7Capable": true,
+ "showSonToggle": false,
+ "sonEnabled": true,
+ "sonRadioAlias": "WLAN_24G",
+ "timestamp": 1792696477034,
+ "wifiInfoList": [
+  {
+   "enabled": false,
+   "possibleSecurityTypes": [
+    4
+   ],
+   "radioAlias": "WLAN_6G",
+   "radioEnabled": true,
+   "securityType": 3,
+   "ssid": "FiosTest-Guest"
+  },
+  {
+   "enabled": false,
+   "possibleSecurityTypes": [
+    4
+   ],
+   "radioAlias": "WLAN_5G",
+   "radioEnabled": true,
+   "securityType": 2,
+   "ssid": "FiosTest-Guest"
+  },
+  {
+   "enabled": false,
+   "possibleSecurityTypes": [
+    4
+   ],
+   "radioAlias": "WLAN_24G",
+   "radioEnabled": true,
+   "securityType": 2,
+   "ssid": "FiosTest-Guest"
+  }
+ ]
+}

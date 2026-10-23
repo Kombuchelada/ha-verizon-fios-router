@@ -1,0 +1,40 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Fios router",
+        "description": "The router's admin login (the one printed on its label unless you changed it).",
+        "data": {
+          "host": "Host",
+          "username": "Username",
+          "password": "Password"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Re-enter the router password",
+        "description": "The router at {host} rejected the saved password. Polling has stopped so the router's login lockout isn't triggered.",
+        "data": {
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "The router rejected the username or password. Each failed attempt counts toward its lockout.",
+      "cannot_connect": "Could not reach the router."
+    },
+    "abort": {
+      "already_configured": "This router is already set up.",
+      "reauth_successful": "Password updated.",
+      "unique_id_mismatch": "That is a different router from the one this entry was set up for."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "scan_interval": "Poll interval (seconds, minimum 30)"
+        }
+      }
+    }
+  }
+}

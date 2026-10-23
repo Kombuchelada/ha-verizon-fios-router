@@ -1,0 +1,47 @@
+name: New router model
+description: Report how the integration does on a Verizon router not yet listed as tested.
+labels: [new model]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Reports that it *works* are as useful as reports that it doesn't: they move a model onto the tested list.
+        Nothing here should contain your Wi-Fi password, MAC addresses, serial number or public IP.
+        Diagnostics are redacted; anything else, read before you paste.
+  - type: input
+    id: model
+    attributes:
+      label: Router model, hardware and firmware version
+      description: From the router's web UI (System Info / About), or the integration's device page if setup worked.
+      placeholder: CR1000A, hardware 1.0, firmware 3.x.x.x
+    validations:
+      required: true
+  - type: dropdown
+    id: result
+    attributes:
+      label: How far does it get?
+      options:
+        - Everything works
+        - Set up works, some entities are wrong or unavailable
+        - Set up fails with "Could not reach the router"
+        - Set up fails with a rejected password I know is right
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Which entities are wrong, and what the router's web UI shows instead
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostics (if set up worked)
+      description: Device page → ⋮ → Download diagnostics. Drag the file here.
+  - type: textarea
+    id: live_check
+    attributes:
+      label: live_check.py output (if set up failed)
+      description: |
+        `scripts/live_check.py` from this repo logs in once, makes the same reads as the integration and prints a summary with no addresses or names.
+        It shows which calls your model rejects. See the README's "Reporting a new router model".
+      render: text

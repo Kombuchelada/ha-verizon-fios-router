@@ -1,0 +1,43 @@
+name: Bug report
+description: Something is wrong on a router model the README lists as tested.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Untested model? Use **New router model** instead.
+        Before attaching anything, read it: diagnostics are redacted, but logs are not.
+  - type: input
+    id: model
+    attributes:
+      label: Router model and firmware
+      description: Settings → Devices & services → Verizon Fios Router → the device page shows both.
+      placeholder: CHR30A-R, firmware 4.1.7.8822
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Home Assistant and integration versions
+      placeholder: HA 2026.10.2, fios_router 0.1.0
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what you expected
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostics
+      description: Device page → ⋮ → Download diagnostics. Drag the file here.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Debug log
+      description: |
+        Enable debug logging on the integration's page, reproduce, then disable it to download the log.
+        Paste only the `custom_components.fios_router` lines.
+      render: text

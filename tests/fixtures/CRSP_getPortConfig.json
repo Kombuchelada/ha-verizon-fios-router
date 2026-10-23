@@ -1,0 +1,169 @@
+{
+ "portConfigList": [
+  {
+   "isConnected": false,
+   "portType": 1,
+   "possibleServices": [
+    {
+     "duplex": 0,
+     "speedMbps": -1
+    },
+    {
+     "duplex": 1,
+     "speedMbps": 100
+    },
+    {
+     "duplex": 2,
+     "speedMbps": 100
+    },
+    {
+     "duplex": 1,
+     "speedMbps": 1000
+    },
+    {
+     "duplex": 2,
+     "speedMbps": 1000
+    },
+    {
+     "duplex": 2,
+     "speedMbps": 2500
+    },
+    {
+     "duplex": 2,
+     "speedMbps": 5000
+    },
+    {
+     "duplex": 2,
+     "speedMbps": 10000
+    }
+   ],
+   "selectedService": {
+    "duplex": 0,
+    "speedMbps": -1
+   }
+  },
+  {
+   "activeService": {
+    "duplex": 2,
+    "speedMbps": 1000
+   },
+   "isConnected": true,
+   "portType": 2,
+   "possibleServices": [
+    {
+     "duplex": 0,
+     "speedMbps": -1
+    },
+    {
+     "duplex": 1,
+     "speedMbps": 100
+    },
+    {
+     "duplex": 2,
+     "speedMbps": 100
+    },
+    {
+     "duplex": 1,
+     "speedMbps": 1000
+    },
+    {
+     "duplex": 2,
+     "speedMbps": 1000
+    },
+    {
+     "duplex": 2,
+     "speedMbps": 2500
+    }
+   ],
+   "selectedService": {
+    "duplex": 0,
+    "speedMbps": -1
+   }
+  },
+  {
+   "activeService": {
+    "duplex": 2,
+    "speedMbps": 100
+   },
+   "isConnected": true,
+   "portType": 3,
+   "possibleServices": [
+    {
+     "duplex": 0,
+     "speedMbps": -1
+    },
+    {
+     "duplex": 1,
+     "speedMbps": 100
+    },
+    {
+     "duplex": 2,
+     "speedMbps": 100
+    },
+    {
+     "duplex": 1,
+     "speedMbps": 1000
+    },
+    {
+     "duplex": 2,
+     "speedMbps": 1000
+    },
+    {
+     "duplex": 2,
+     "speedMbps": 2500
+    }
+   ],
+   "selectedService": {
+    "duplex": 0,
+    "speedMbps": -1
+   }
+  },
+  {
+   "activeService": {
+    "duplex": 2,
+    "speedMbps": 1000
+   },
+   "isConnected": true,
+   "portType": 0,
+   "possibleServices": [
+    {
+     "duplex": 0,
+     "speedMbps": -1
+    },
+    {
+     "duplex": 1,
+     "speedMbps": 100
+    },
+    {
+     "duplex": 2,
+     "speedMbps": 100
+    },
+    {
+     "duplex": 1,
+     "speedMbps": 1000
+    },
+    {
+     "duplex": 2,
+     "speedMbps": 1000
+    },
+    {
+     "duplex": 2,
+     "speedMbps": 2500
+    },
+    {
+     "duplex": 2,
+     "speedMbps": 5000
+    },
+    {
+     "duplex": 2,
+     "speedMbps": 10000
+    }
+   ],
+   "selectedService": {
+    "duplex": 0,
+    "speedMbps": -1
+   }
+  }
+ ],
+ "timestamp": 1792696476444
+}

@@ -1,0 +1,36 @@
+name: Tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - ha: "2026.10.2 (pinned)"
+            phcc: ""
+          - ha: "2026.8.0 (minimum, hacs.json)"
+            phcc: "0.13.354"
+    name: pytest on HA ${{ matrix.ha }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.14"
+          cache: pip
+          cache-dependency-path: requirements_test.txt
+      - name: Install
+        run: |
+          pip install -r requirements_test.txt
+          if [ -n "${{ matrix.phcc }}" ]; then
+            pip install "pytest-homeassistant-custom-component==${{ matrix.phcc }}"
+          fi
+      - run: python -m pytest -q
